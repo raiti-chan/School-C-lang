@@ -1,17 +1,20 @@
 /*****************************************************************************
- * プログラム名 : Sample2-6.c
+ * プログラム名 : sample0209.c
  * 作成 : 2019/06/17 小山
- * 内容 : 整数と浮動小数点数
+ * 内容 : 二つの整数値を読み込んで平均値を実数で表示
  ****************************************************************************/
 
 #include <stdio.h>
 
 void main() {
-	int i_value = 9.99;
-	double d_value = 9.99;
+	int val_a, val_b;
 	
-	printf("int		型変数	n の値 : %d\n", i_value);
-	printf("				n / 2 : %d\n", i_value / 2);
-	printf("double	型変数	x の値 : %f\n", d_value);
-	printf("				x / 2 : %f\n", d_value / 2.0);
+	puts("二つの整数を入力してください。");
+	
+	printf("整数 a : ");
+	scanf("%d", &val_a);
+	printf("整数 b : ");
+	scanf("%d", &val_b);
+	
+	printf("それらの平均は%fです。\n", (val_a + val_b) / 2.0);
 }

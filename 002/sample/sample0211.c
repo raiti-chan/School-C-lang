@@ -1,29 +1,27 @@
 /*****************************************************************************
- * プログラム名 : Sample2-8.c
+ * プログラム名 : sample0211.c
  * 作成 : 2019/06/17 小山
- * 内容 : 型と演算について確認するためのプログラム
+ * 内容 : 三つの整数値を読み込んで合計値と平均値を表示
  ****************************************************************************/
-
 #include <stdio.h>
 
-void main(void)	{
-	int i_val_1, i_val_2, i_val_3, i_val_4;
-	double d_val_1, d_val_2, d_val_3, d_val_4;
-	i_val_1 = 5 / 2;
-	i_val_2 = 5.0 / 2.0;
-	i_val_3 = 5.0 / 2;
-	i_val_4 = 5 / 2.0;
-	d_val_1 = 5 / 2;
-	d_val_2 = 5.0 / 2.0;
-	d_val_3 = 5.0 / 2;
-	d_val_4 = 5 / 2.0;
-	printf("n1(5/2 の答え) = %d\n", i_val_1);
-	printf("n2(5.0/2.0 の答え) = %d\n", i_val_2);
-	printf("n3(5.0/2 の答え) = %d\n", i_val_3); 
-	printf("n4(5/2.0 の答え) = %d\n\n", i_val_4);
-	printf("d1(5/2 の答え) = %f\n", d_val_1);
-	printf("d2(5.0/2.0 の答え) = %f\n", d_val_2);
-	printf("d3(5.0/2 の答え) = %f\n", d_val_3);
-	printf("d4(5/2.0 の答え) = %f\n", d_val_4);
-	
+void main() {
+	int a, b, c;
+	int sum;
+	double ave;
+
+	puts("三つの整数を入力してください。");
+	printf("整数 a : ");
+	scanf("%d", &a);
+	printf("整数 b : ");
+	scanf("%d", &b);
+	printf("整数 c : ");
+	scanf("%d", &c);
+
+	sum = a + b + c;
+	ave = (double)sum / 3;
+
+	printf(
+		"それらの合計は%5dです。\n"
+		"それらの平均は%5.1fです。\n", sum, ave);
 }

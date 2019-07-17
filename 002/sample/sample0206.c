@@ -1,20 +1,17 @@
 /*****************************************************************************
- * プログラム名 : Sample2-3.c
+ * プログラム名 : sample0206.c
  * 作成 : 2019/06/17 小山
- * 内容 : 二つの整数値を読み込んで商と剰余を表示
+ * 内容 : 整数と浮動小数点数
  ****************************************************************************/
 
 #include <stdio.h>
 
 void main() {
-	int value_a, value_b;
-
-	puts("二つの整数を入力してください。");
-	printf("整数 a : ");
-	scanf("%d", &value_a);
-	printf("整数 b : ");
-	scanf("%d", &value_b);
+	int i_value = 9.99;
+	double d_value = 9.99;
 	
-	printf("a を b で割ると%dあまり%dです。\n", value_a / value_b, value_a % value_b);
-	
+	printf("int		型変数	n の値 : %d\n", i_value);
+	printf("				n / 2 : %d\n", i_value / 2);
+	printf("double	型変数	x の値 : %f\n", d_value);
+	printf("				x / 2 : %f\n", d_value / 2.0);
 }

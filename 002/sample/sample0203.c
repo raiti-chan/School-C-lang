@@ -1,27 +1,20 @@
 /*****************************************************************************
- * プログラム名 : Sample2-11.c
+ * プログラム名 : sample0203.c
  * 作成 : 2019/06/17 小山
- * 内容 : 三つの整数値を読み込んで合計値と平均値を表示
+ * 内容 : 二つの整数値を読み込んで商と剰余を表示
  ****************************************************************************/
+
 #include <stdio.h>
 
 void main() {
-	int a, b, c;
-	int sum;
-	double ave;
+	int value_a, value_b;
 
-	puts("三つの整数を入力してください。");
+	puts("二つの整数を入力してください。");
 	printf("整数 a : ");
-	scanf("%d", &a);
+	scanf("%d", &value_a);
 	printf("整数 b : ");
-	scanf("%d", &b);
-	printf("整数 c : ");
-	scanf("%d", &c);
-
-	sum = a + b + c;
-	ave = (double)sum / 3;
-
-	printf(
-		"それらの合計は%5dです。\n"
-		"それらの平均は%5.1fです。\n", sum, ave);
+	scanf("%d", &value_b);
+	
+	printf("a を b で割ると%dあまり%dです。\n", value_a / value_b, value_a % value_b);
+	
 }

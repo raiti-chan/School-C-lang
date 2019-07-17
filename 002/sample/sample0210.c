@@ -1,23 +1,22 @@
 /*****************************************************************************
- * プログラム名 : Sample2-7.c
+ * プログラム名 : sample0210.c
  * 作成 : 2019/06/17 小山
- * 内容 : 二つの実数値を読み込んで和・差・積・商を実数で表示
+ * 内容 : 二つの整数値を読み込んで平均値を実数で表示(キャストを利用)
  ****************************************************************************/
 
 #include <stdio.h>
 
+#include <stdio.h>
+
 void main() {
-	double value_x, value_y;
+	int val_a, val_b;
 	
-	puts("二つの実数を入力してください。");
+	puts("二つの整数を入力してください。");
 	
-	printf("実数 vx : ");
-	scanf("%lf", &value_x);
-	printf("実数 vy : ");
-	scanf("%lf", &value_y);
+	printf("整数 a : ");
+	scanf("%d", &val_a);
+	printf("整数 b : ");
+	scanf("%d", &val_b);
 	
-	printf("vx + vy = %f\n", value_x + value_y);
-	printf("vx - vy = %f\n", value_x - value_y);
-	printf("vx * vy = %f\n", value_x * value_y);
-	printf("vx / vy = %f\n", value_x / value_y);
+	printf("それらの平均は%fです。\n", (double)(val_a + val_b) / 2);
 }
