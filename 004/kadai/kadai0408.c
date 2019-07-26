@@ -7,7 +7,7 @@
 #include <stdio.h>
 
 void main() {
-	int input, sum = 0, count = 0;
+	int input, sum = 0, count = -1;
 	do {
 		printf("点数を入力 : ");
 		scanf("%d", &input);
